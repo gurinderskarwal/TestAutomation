@@ -11,7 +11,7 @@
 	# 	Then user see an error message for invalid email	
 		
   @Regression @signup @smoketesting @sanitychecks @p1
-	# Scenario: user should be able to register with valid email address
+# Scenario: user should be able to register with valid email address
     	# 	Given user is on create account page
 	# 	When user adds personal details
 	# 	And user clicks on register button
