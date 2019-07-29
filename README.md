@@ -3,10 +3,10 @@
 # Cucumber Feature: Successfull user registration
 # Scenarios:
   @Regression @smoketesting @p3
-  Scenario: user should not be able to register with invalid email
-    # Given user is on homepage
-	# 	When user navigates to create account Page
-	# 	And user enters invalid email address
+# Scenario: user should not be able to register with invalid email
+# Given user is on homepage
+# 	When user navigates to create account Page
+# 	And user enters invalid email address
 	# 	And user click on create an account
 	# 	Then user see an error message for invalid email	
 		
