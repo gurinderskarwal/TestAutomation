@@ -12,7 +12,7 @@
 		
   @Regression @signup @smoketesting @sanitychecks @p1
 # Scenario: user should be able to register with valid email address
-    	#	Given user is on create account page
+	#	Given user is on create account page
 	# 	When user adds personal details
 	# 	And user clicks on register button
 	# 	Then user is successfully registored
