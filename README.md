@@ -1,4 +1,4 @@
-# TestAutomation - Assigment
+## TestAutomation - Assigment
 
 # Cucumber Feature: Successfull user registration
 # Scenarios:
