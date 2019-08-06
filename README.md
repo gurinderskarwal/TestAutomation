@@ -1,6 +1,7 @@
 ## TestAutomation - Assigment
 
-# Cucumber Feature: Successfull user registration
+# Cucumber Feature# 
+Successfull user registration
 # Scenarios:
   @Regression @smoketesting @p3
 # Scenario: user should not be able to register with invalid email
