@@ -14,8 +14,8 @@ import pageobjects.CreateAccount;
 
 public class test {
     public static WebDriver driver;
-    @Given("^user is on homepage$")
-    public void user_is_on_homepage() throws Throwable {   
+    @Given("^user is on automationpractice homepage$")
+    public void user_is_on_automationpractice_homepage() throws Throwable {   
     	driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
@@ -58,6 +58,12 @@ public class test {
     	CreateAccount ca = new CreateAccount(driver);
     	ca.setcreateaccountemail(); 
     	ca.submitBtn();   
+    }
+    
+    @And("^user enters valid email address$")
+    public void user_enters_valid_email_address() throws Throwable {
+    	CreateAccount ca = new CreateAccount(driver);
+    	ca.setcreateaccountemail();   			
     }
 
     @When("^user adds personal details$")
