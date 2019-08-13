@@ -28,7 +28,7 @@ Successfull user registration
 # Compile the application
 
 ```
-cd testautomation
+cd TestAutomation
 mvn clean compile
 ```
 	
