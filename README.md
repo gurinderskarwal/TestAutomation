@@ -17,3 +17,27 @@ Successfull user registration
 	# 	When user adds personal details
 	# 	And user clicks on register button
 	# 	Then user is successfully registored
+
+
+## How to run this application
+
+# Clone the git repo using following command
+
+```git clone https://github.com/gurinderskarwal/TestAutomation.git```
+
+# Compile the application
+
+```
+cd testautomation
+mvn clean compile
+```
+	
+# Run the application
+	
+```mvn test ```
+	
+Make sure chromedriver executable (chromedriver.exe for windows e.g.) is in your system path.
+
+This should open the browser and will do the required steps.
+
+Once tests are run report (report.html) will be availbale in target/cucumber-reports
