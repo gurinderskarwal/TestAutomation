@@ -1,6 +1,6 @@
 ## TestAutomation - Assigment
 
-# Cucumber Feature# 
+## Cucumber Feature: 
 Successfull user registration
 # Scenarios:
   @Regression @smoketesting @p3
