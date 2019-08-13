@@ -4,7 +4,7 @@
 Successfull user registration
 
   @Regression @smoketesting @p3
-# Scenario: user should not be able to register with invalid email
+## Scenario: user should not be able to register with invalid email
 	#	Given user is on homepage
 	#	When user navigates to create account Page
 	#	And user enters invalid email address
@@ -12,7 +12,7 @@ Successfull user registration
 	# 	Then user see an error message for invalid email	
 		
   @Regression @signup @smoketesting @sanitychecks @p1
-# Scenario: user should be able to register with valid email address
+## Scenario: user should be able to register with valid email address
 	#	Given user is on create account page
 	# 	When user adds personal details
 	# 	And user clicks on register button
@@ -21,18 +21,18 @@ Successfull user registration
 
 ## How to run this application
 
-# Clone the git repo using following command
+## Clone the git repo using following command
 
 ```git clone https://github.com/gurinderskarwal/TestAutomation.git```
 
-# Compile the application
+## Compile the application
 
 ```
 cd TestAutomation
 mvn clean compile
 ```
 	
-# Run the application
+## Run the application
 	
 ```mvn test ```
 	
