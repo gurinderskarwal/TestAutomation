@@ -8,8 +8,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pageObjects.HomePage;
-import pageObjects.createaccount;
+import pageobjects.HomePage;
+import pageobjects.CreateAccount;
 
 
 public class test {
@@ -24,20 +24,20 @@ public class test {
     @When("^user navigates to create account Page$")
     public void user_navigates_to_create_account_page() throws Throwable {
     	HomePage ln = new HomePage(driver);
-    	ln.clicksignin();
+    	ln.clickSignIn();
     	
     }
     
     @And("^user enters invalid email address$")
     public void user_enters_invalid_email_address() throws Throwable {
-    	createaccount ca = new createaccount(driver);
-    	ca.invalidemail();   			
+    	CreateAccount ca = new CreateAccount(driver);
+    	ca.invalidEmail();   			
     }
     
     @And("^user click on create an account$")
     public void user_click_on_create_an_account() throws Throwable {
-    	createaccount ca = new createaccount(driver);
-    	ca.submitbtn();    			
+    	CreateAccount ca = new CreateAccount(driver);
+    	ca.submitBtn();    			
     }
      
     @Then("^user see an error message for invalid email$")
@@ -54,41 +54,41 @@ public class test {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
     	HomePage ln = new HomePage(driver);
-    	ln.clicksignin();
-    	createaccount ca = new createaccount(driver);
+    	ln.clickSignIn();
+    	CreateAccount ca = new CreateAccount(driver);
     	ca.setcreateaccountemail(); 
-    	ca.submitbtn();   
+    	ca.submitBtn();   
     }
 
     @When("^user adds personal details$")
     public void user_adds_personal_details() throws Throwable {
-    	createaccount ca = new createaccount(driver);
-    	ca.titlegender();
-    	ca.firstname();
-    	ca.lastname();
+    	CreateAccount ca = new CreateAccount(driver);
+    	ca.titleGender();
+    	ca.firstName();
+    	ca.lastName();
     	ca.password();
     	ca.days();
     	ca.months();
     	ca.years();
-    	ca.newsletter();
-    	ca.specialoffers();
+    	ca.newsLetter();
+    	ca.specialOffers();
     	ca.company();
     	ca.address();
-    	ca.addresstwo();
+    	ca.addressTwo();
     	ca.city();
     	ca.state();
     	ca.postcode();
     	ca.country();
-    	ca.additonalinfo();
-    	ca.homephone();
+    	ca.additonalInfo();
+    	ca.homePhone();
     	ca.mobile();
-    	ca.futureref();
+    	ca.futureRef();
     }
 
     @When("^user clicks on register button$")
     public void user_clicks_on_register_button() throws Throwable {
-    	createaccount ca = new createaccount(driver);
-    	ca.submitaccount();
+    	CreateAccount ca = new CreateAccount(driver);
+    	ca.submitAccount();
         //driver.quit(); 
     }
 
