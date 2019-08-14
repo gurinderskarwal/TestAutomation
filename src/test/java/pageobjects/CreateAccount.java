@@ -17,9 +17,6 @@ public class CreateAccount
 	By firstname = By.id("customer_firstname");
 	By lastname = By.id("customer_lastname");
 	By password = By.id("passwd"); 
-	//By days = By.id("days");
-	//By months = By.id("months");
-	//By years = By.id("years");
 	By newsletter = By.id("newsletter");
 	By specialoffers = By.id("optin");
 	By company = By.id("company");
@@ -64,109 +61,184 @@ public class CreateAccount
 
 	}
 
-	//set page elements
-
+		/*
+		 * adds email in text box
+		*/
 		public void setcreateaccountemail()
 		{
 			driver.findElement(createaccountemail).sendKeys(emailRandom);
 
 		}
+		
+		/*
+		 * adds firstname in text box
+		*/
 		public void firstName()
 		{
 			driver.findElement(firstname).sendKeys(firstNameRandom);
 
 		}
+		
+		/*
+		 * adds lastname in text box
+		*/
 		public void lastName()
 		{
 			driver.findElement(lastname).sendKeys(lastNameRandom);
 
 		}
+		
+		/*
+		 * adds password in text box
+		*/
 		public void password()
 		{
 			driver.findElement(password).sendKeys(userpassword);
 
 		}
+		
+		/*
+		 * select day from dropdown
+		*/
 		public void days()
 		{
 			Select drpdowndays = new Select(driver.findElement(By.name("days")));
 			drpdowndays.selectByValue("1");
 
 		}
+		
+		/*
+		 * select month from dropdown
+		*/
 		public void months()
 		{
 			Select drpdownmonths = new Select(driver.findElement(By.name("months")));
 			drpdownmonths.selectByIndex(1);
 
 		}
+		
+		/*
+		 * select years from dropdown
+		*/
 		public void years()
 		{
 			Select drpdownyears = new Select(driver.findElement(By.name("years")));
 			drpdownyears.selectByValue("2001");
 
 		}
+		
+		/*
+		 * adds company in text box
+		*/
 		public void company()
 		{
 			driver.findElement(company).sendKeys(companyRandom);
 
 		}
+		
+		/*
+		 * adds address in text box
+		*/
 		public void address()
 		{
 			driver.findElement(address).sendKeys(user_address);
 
 		}
+		
+		/*
+		 * adds second address in text box
+		*/
 		public void addressTwo()
 		{
 			driver.findElement(addresstwo).sendKeys(user_address_two);
 
 		}
+		
+		/*
+		 * adds city in text box
+		*/
 		public void city()
 		{
 			driver.findElement(city).sendKeys(user_city);
 
 		}
+		
+		/*
+		 * select state from dropdown
+		*/
 		public void state()
 		{
 			Select drpstate = new Select(driver.findElement(By.id("id_state")));
 			drpstate.selectByVisibleText("Alabama");
 
 		}
+		
+		/*
+		 * select country from dropdown
+		*/
 		public void country()
 		{
 			Select drpcountry = new Select(driver.findElement(By.id("id_country")));
 			drpcountry.selectByVisibleText("United States");
 
 		}
+		
+		/*
+		 * adds postcode in text box
+		*/
 		public void postcode()
 		{
 			driver.findElement(postcode).sendKeys(user_postcode);
 
 		}
+		
+		/*
+		 * adds additonal info in text box
+		*/
 		public void additonalInfo()
 		{
 			driver.findElement(additonalinfo).sendKeys(user_additionalinfo);
 
 		}
+		
+		/*
+		 * adds homePhone in text box
+		*/
 		public void homePhone()
 		{
 			driver.findElement(homephone).sendKeys(homePhoneRandom);
 
 		}
+		
+		/*
+		 * adds mobile in text box
+		*/
 		public void mobile()
 		{
 			driver.findElement(mobile).sendKeys(mobileRandom);
 
 		}
+		
+		/*
+		 * adds future reference in text box
+		*/
 		public void futureRef()
 		{
 			driver.findElement(futureref).sendKeys(user_futureref);
 
 		}
-
+		
+		/*
+		 * clicks on submit button
+		*/
 	    public void submitBtn()
 	    {
 	    	driver.findElement(submitcreate).click();
 
 	    }
+	    /*
+		 * select Gendar on radio button
+		*/
 	    
 	    public void titleGender()
 	    {
@@ -174,28 +246,45 @@ public class CreateAccount
 
 	    }
 	    
+	    /*
+		 * clicks on submit account button
+		*/
 	    public void submitAccount()
 	    {
 	    	driver.findElement(submitaccount).click();
 
 	    }
+	    
+	    /*
+		 * selects newsLetter checkbox
+		*/
 	    public void newsLetter()
 	    {
 	    	driver.findElement(newsletter).click();
 
 	    }
+	    
+	    /*
+		 * selects special offers checkbox
+		*/
 	    public void specialOffers()
 	    {
 	    	driver.findElement(specialoffers).click();
 
 	    }
 	    
+	    /*
+		 * finds create account title
+		*/
 	    public String getCreateAccountTitle()
 	    {
-
 	        return    driver.findElement(titletext).getText();
 
 	     }
+	    
+	    /*
+		 * adds invalid email in text box
+		*/
 	    public void invalidEmail()
 		{
 			driver.findElement(createaccountemail).sendKeys(invalidemail);

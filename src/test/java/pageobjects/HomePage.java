@@ -19,7 +19,9 @@ public class HomePage
 
 	}
 
-//Click on sign in on home page
+	 /*
+	  * clicks on sign in button
+	 */
 	 public void clickSignIn()
 	 {
 

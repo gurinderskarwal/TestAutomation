@@ -14,6 +14,10 @@ public class MyAccount
     this.driver = driver;
 
 	}
+	
+	 /*
+	 * clicks on sign out button
+	 */
 	public void signOut()
 	{
 	driver.findElement(signout);
