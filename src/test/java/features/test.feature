@@ -1,6 +1,6 @@
 Feature: Verify if user should be able to register using a valid email address
 
-		@Regression @smoketesting @p3
+		@Regression @smoketesting @p3 @signup
   Scenario: user should not be able to register with invalid email
     Given user is on automationpractice homepage
 		When user navigates to create account Page
